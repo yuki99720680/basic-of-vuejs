@@ -39,6 +39,11 @@ const todoApp = Vue.createApp({
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(this.todos))
       if(localStorage.getItem(LOCAL_STORAGE_KEY) == '[]') localStorage.clear()
     }
+  },
+  computed: {
+    reverseTodos() {
+      return this.todos.slice().reverse();
+    }
   }
 })
 
