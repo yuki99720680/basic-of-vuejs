@@ -8,17 +8,17 @@
 </head>
 <body> 
   <div id='todo-app'>
-    <header class="header">
-      <h1 class="header__title">Todo made by m-kimura</h1>
+    <header class='header'>
+      <h1 class='header__title'>Todo made by m-kimura</h1>
     </header>
-    <main class="main">
-      <div class="form">
-        <input @keyup.enter='addTodo' type='text' v-model='newTodo' placeholder='Add Todo & press Enter.' class="form-item__input-text">
+    <main class='main'>
+      <div class='form'>
+        <input @keyup.enter='addTodo' type='text' v-model='newTodo' placeholder='Add Todo & press Enter.' class='form-item__input-text'>
       </div>
-      <ul class="item-list">
-        <li v-for='(todo, index) in todos' class="item-list__item">
-          <input @keyup='updateTodo(index, todo)' type='text' v-model='todo.todo' class="item-list__item-li">
-          <button @click='deleteTodo(index)' class="item-list__item-button-delete">X</button>
+      <ul class='item-list'>
+        <li v-for='(todo, index) in todos' :key='todo.id' class='item-list__item'>
+          <input @keyup='updateTodo(index, todo)' type='text' v-model='todo.todo' class='item-list__item-li'>
+          <button @click='deleteTodo(index)' class='item-list__item-button-delete'>X</button>
         </li>
       </ul>
     </main>
