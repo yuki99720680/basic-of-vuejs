@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Add new code below. */
+
+#todo-app {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.header {
+  height: 100px;
+  background-color: #003366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+	color: #fff;
+	opacity: 0.9;
+	font-size: 20px;
+  font-weight: bold;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.form {
+	background-color: #fff;
+}
+
+.form-item__input-text {
+	height: 35px;
+  width: 380px;
+  outline: none;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+}
+
+.form-item__input-text:focus {
+  border: 1px solid #ffd000;
+}
+
+.item-list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.item-list__item {
+	display: flex;
+	gap: 5px;
+}
+
+.item-list__item-li {
+	outline: none;
+	border: 1px solid #d5d5d5;
+  border-radius: 3px;
+}
+
+.item-list__item-li:focus {
+  border: 1px solid #ffd000;
+}
+
+.item-list__item-button-delete {
+	outline: none;
+	border: 1px solid #d5d5d5;
+  border-radius: 5px;
+	color: #3d5966;
+}
